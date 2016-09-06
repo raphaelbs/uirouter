@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>teste | uirouter</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	</head>
+
+	<body ng-app="app">
+		<!-- NAVIGATION -->
+		<nav class="navbar navbar-inverse" role="navigation">
+		    <div class="navbar-header">
+		        <a class="navbar-brand" ui-sref="#">uirouter</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		        <li><a ui-sref="home">Home</a></li>
+		        <li><a ui-sref="about">About</a></li>
+		    </ul>
+		</nav>
+
+		<!-- MAIN CONTENT -->
+		<div class="container">
+			<div ui-view="principal"></div>
+		</div>
+
+		<script src="/angular/angular.js" charset="utf-8"></script>
+		<script src="/angular-ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+		<script src="/router.js" charset="utf-8"></script>
+	</body>
+</html>
