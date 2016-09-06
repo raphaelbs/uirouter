@@ -1,6 +1,7 @@
-angular.module('app', ['ui.router'])
+angular.module('app', ['ui.router', 'ngMaterial'])
 .config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.when('/home', '/home/list');
 
 	// Podemos declarar as views usando a maneira 'Nested'
 	// Onde primeiro declaramos o pai...
